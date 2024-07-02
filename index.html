@@ -1,0 +1,3298 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Catalog</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- swiper -->
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="js/swiper.min.js"></script>
+
+    <!-- aos -->
+
+    <link href="css/aos.css" rel="stylesheet" />
+    <script src="js/aos.js"></script>
+
+    <!-- custom -->
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/font.css" />
+
+    <!-- font -->
+    <link href="https://fonts.cdnfonts.com/css/chapaza" rel="stylesheet" />
+  </head>
+
+  <body>
+    <script>
+      AOS.init({
+        duration: 600,
+        delay: 0,
+      });
+    </script>
+
+    <div class="catalog_wrap">
+      <div class="catalog_div">
+        <!-- If we need navigation buttons -->
+        <div class="slide_btn">
+          <div class="swiper-button-prev">
+            <img src="img/prev.png" alt="" />
+            <img src="img/prev2.svg" alt="" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="img/next.png" alt="" />
+            <img src="img/next2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="top_btn_wrap">
+          <ul class="top_btn">
+            <li class="print">
+              <div class="btn_img" onclick="window.print()">
+                <img src="img/print.png" alt="" />
+                <img src="img/print2.png" alt="" />
+              </div>
+              <p>Print</p>
+              <p class="print_txt hide">
+                When printing, set the margin to none.
+              </p>
+            </li>
+
+            <li class="full">
+              <div class="btn_img full1" onclick="openFullscreen();">
+                <img src="img/full.png" alt="" />
+                <img src="img/full2.png" alt="" />
+              </div>
+
+              <div class="btn_img full2" onclick="closeFullscreen();">
+                <img src="img/full.png" alt="" />
+                <img src="img/full3.png" alt="" />
+              </div>
+
+              <p>Full screen</p>
+              <p class="full_txt hide">
+                The ESC button may not work on certain servers. If so, use a
+                generic screen icon.
+              </p>
+            </li>
+
+            <li class="play on">
+              <div class="btn_img">
+                <div class="swiper-button-play on">
+                  <img src="img/play.png" alt="" />
+                  <img src="img/play2.png" alt="" />
+                </div>
+              </div>
+              <p>Play</p>
+            </li>
+
+            <li class="pause">
+              <div class="btn_img">
+                <div class="swiper-button-pause">
+                  <img src="img/pause.png" alt="" />
+                  <img src="img/pause2.png" alt="" />
+                </div>
+              </div>
+              <p>Stop</p>
+            </li>
+
+            <li class="list">
+              <div class="btn_img">
+                <div onclick="list();">
+                  <img src="img/list.png" alt="" />
+                  <img src="img/list2.png" alt="" />
+                </div>
+              </div>
+              <p>List</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="catalog_cont">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <!-- page0  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p0">
+                  <div
+                    class="p0_bg move"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-offset="0"
+                  >
+                    <div
+                      class="p0_cont move"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <div class="p0_inner">
+                        <div class="p0_img">
+                          <img src="img/page/main_img.svg" alt="" />
+                        </div>
+                        <div class="p0_txt">
+                          <img src="img/page/p0_img01.svg"/>
+                          <p class="p0_tit cha">Haejomyeongga</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page1  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p1 bg_none">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">01</p>
+                       <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="p1_inner">
+                    <div
+                      class="p1_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p1_left_top">
+                        <img src="img/page/main_img.svg" alt="" />
+                        <p class="cha p1_tit">
+                        HaejoMyeongga's <br>
+                        top priorities art taste <br>
+                        nutrition and hygiene.
+                        </p>
+                      </div>
+
+                      <div class="p1_left_bot">
+                        <img src="img/page/p1_img02.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div
+                      class="p1_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p1_right_top">
+                        <p class="p1_sub_tit cha">About us</p>
+                        <img src="img/page/p1_img01.png" alt="" />
+                      </div>
+
+                      <div class="p1_right_bot">
+                        <img src="img/page/p1_img03.svg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page2  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p2 bg_none">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">02</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="p2_inner">
+                    <div
+                      class="p2_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="cha p2_tit">Global Export</p>
+                      <div class="img-wrap ml-21">
+                        <img src="img/page/p2_img01.svg" />
+                      </div>
+                    </div>
+
+                    <div
+                      class="p2_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p2_right_top">
+                        <p class="p2_sub_tit cha">Certification Status</p>
+                        <img src="img/page/p2_img02.svg" alt="" />
+                      </div>
+
+                      <div class="p2_right_bot">
+                        <img src="img/page/p2_img03.svg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page3  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p3">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">03</p>
+                       <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page-slider page-slider-p3">
+                    <div class="swiper-wrapper">
+                      <!-- p3_1 -->
+                      <div class="swiper-slide" id="t1">
+                        <div class="p3_inner">
+                          <div
+                            class="p3_left move"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                          >
+                            <img src="img/page/p3_img01.png" />
+                            <img src="img/page/p3_img02.png" />
+                          </div>
+
+                          <div
+                            class="p3_right move"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                          >
+                            <p class="p3_tit cha">Media</p>
+                            <img src="img/page/p3_img03.svg" />
+                            <ul class="p3_nav">
+                              <li class="on"><a href="#" data-target="t1"></a></li>
+                              <li><a href="#" data-target="t2"></a></li>
+                              <li><a href="#" data-target="t3"></a></li>
+                              <li><a href="#" data-target="t4"></a></li>
+                              <li><a href="#" data-target="t5"></a></li>
+                              <li><a href="#" data-target="t6"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- p3_2 -->
+                      <div class="swiper-slide" id="t2">
+                        <div class="p3_inner">
+                          <div
+                            class="p3_left move"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                          >
+                            <img src="img/page/p3_img04.png" />
+                            <img src="img/page/p3_img05.png" />
+                          </div>
+
+                          <div
+                            class="p3_right p3_2_right move"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                          >
+                            <p class="p3_tit cha">Media</p>
+                            <img src="img/page/p3_img06.svg" />
+                            <ul class="p3_nav">
+                              <li><a href="#" data-target="t1"></a></li>
+                              <li class="on"><a href="#" data-target="t2"></a></li>
+                              <li><a href="#" data-target="t3"></a></li>
+                              <li><a href="#" data-target="t4"></a></li>
+                              <li><a href="#" data-target="t5"></a></li>
+                              <li><a href="#" data-target="t6"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- p3_3 -->
+                      <div class="swiper-slide" id="t3">
+                        <div class="p3_inner">
+                          <div
+                            class="p3_left move"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                          >
+                            <img src="img/page/p3_img07.png" />
+                            <img src="img/page/p3_img08.png" />
+                          </div>
+
+                          <div
+                            class="p3_right p3_3_right move"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                          >
+                            <p class="p3_tit cha">Media</p>
+                            <img src="img/page/p3_img09.svg" />
+                            <ul class="p3_nav">
+                              <li><a href="#" data-target="t1"></a></li>
+                              <li><a href="#" data-target="t2"></a></li>
+                              <li class="on"><a href="#" data-target="t3"></a></li>
+                              <li><a href="#" data-target="t4"></a></li>
+                              <li><a href="#" data-target="t5"></a></li>
+                              <li><a href="#" data-target="t6"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- p3_4 -->
+                      <div class="swiper-slide" id="t4">
+                        <div class="p3_inner">
+                          <div
+                            class="p3_left move"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                          >
+                            <img src="img/page/p3_img10.png" />
+                            <img src="img/page/p3_img11.png" />
+                          </div>
+
+                          <div
+                            class="p3_right p3_4_right move"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                          >
+                            <p class="p3_tit cha">Media</p>
+                            <img src="img/page/p3_img12.svg" />
+                            <ul class="p3_nav">
+                              <li><a href="#" data-target="t1"></a></li>
+                              <li><a href="#" data-target="t2"></a></li>
+                              <li><a href="#" data-target="t3"></a></li>
+                              <li class="on"><a href="#" data-target="t4"></a></li>
+                              <li><a href="#" data-target="t5"></a></li>
+                              <li><a href="#" data-target="t6"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- p3_5 -->
+                      <div class="swiper-slide" id="t5">
+                        <div class="p3_inner">
+                          <div
+                            class="p3_left move"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                          >
+                            <img src="img/page/p3_img13.png" />
+                            <img src="img/page/p3_img14.png" />
+                          </div>
+
+                          <div
+                            class="p3_right p3_5_right move"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                          >
+                            <p class="p3_tit cha">Media</p>
+                            <img src="img/page/p3_img15.svg" />
+                            <ul class="p3_nav">
+                              <li><a href="#" data-target="t1"></a></li>
+                              <li><a href="#" data-target="t2"></a></li>
+                              <li><a href="#" data-target="t3"></a></li>
+                              <li><a href="#" data-target="t4"></a></li>
+                              <li class="on"><a href="#" data-target="t5"></a></li>
+                              <li><a href="#" data-target="t6"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- p3_6 -->
+                      <div class="swiper-slide" id="t6">
+                        <div class="p3_inner">
+                          <div
+                            class="p3_left move"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                          >
+                            <img src="img/page/p3_img16.png" />
+                            <img src="img/page/p3_img17.png" />
+                          </div>
+
+                          <div
+                            class="p3_right p3_6_right move"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                          >
+                            <p class="p3_tit cha">Media</p>
+                            <img src="img/page/p3_img18.svg" />
+                            <ul class="p3_nav">
+                              <li><a href="#" data-target="t1"></a></li>
+                              <li><a href="#" data-target="t2"></a></li>
+                              <li><a href="#" data-target="t3"></a></li>
+                              <li><a href="#" data-target="t4"></a></li>
+                              <li><a href="#" data-target="t5"></a></li>
+                              <li class="on"><a href="#" data-target="t6"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page4  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p4">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">04</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="page-slider page-slider-p4">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide p4_cont" id="p1">
+                        <div
+                          class="p4_top move"
+                          data-aos="fade-down"
+                          data-aos-delay="300"
+                        >
+                          <img src="img/page/p4_icon01.svg" />
+                        </div>
+
+                        <div
+                          class="p4_bot move"
+                          data-aos="fade-left"
+                          data-aos-delay="400"
+                        >
+                          <div
+                            class="p4_bot_left move"
+                            data-aos="fade-right"
+                            data-aos-delay="400"
+                          >
+                            <div><img src="img/page/p4_img02.png" /></div>
+                            <div><img src="img/page/p4_img01.png" /></div>
+                          </div>
+
+                          <div class="p4_bot_right">
+                            <p class="p4_tit cha">Process</p>
+
+                            <ul class="p4_nav">
+                              <li><a href="#" data-target="p1"><img src="img/page/p4_img03.svg" /></a></li>
+                              <li><a href="#" data-target="p2"><img src="img/page/p4_img04.svg" /></a></li>
+                            </ul>
+
+                            <img src="img/page/p4_icon02.svg" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide p4_cont" id="p2">
+                        <div class="p4_top">
+                          <img src="img/page/p4_icon01.svg" />
+                        </div>
+
+                        <div class="p4_bot">
+                          <div class="p4_bot_left">
+                            <div><img src="img/page/p4_img01.png" /></div>
+                            <div><img src="img/page/p4_img02.png" /></div>
+                          </div>
+
+                          <div class="p4_bot_right">
+                            <p class="p4_tit cha">Process</p>
+
+                            <ul class="p4_nav">
+                              <li><a href="#" data-target="p1"><img src="img/page/p4_img06.svg" /></a></li>
+                              <li><a href="#" data-target="p2"><img src="img/page/p4_img05.svg" /></a></li>
+                            </ul>
+
+                            <img src="img/page/p4_icon03.svg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page5  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p5">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">05</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="p5_inner move"
+                    data-aos="fade-down"
+                    data-aos-delay="400"
+                  >
+                    <div class="p5_left">
+                      <div class="p5_left_img">
+                        <img src="img/page/p5_img01.png" />
+                      </div>
+                      <p class="p5_left_txt cha">OEM · ODM</p>
+                    </div>
+
+                    <div class="p5_right">
+                      <div class="p5_right_txt">
+                        <p class="cha p5_tit">
+                          What is Manna Food’s <br>
+                          OEM & ODM system?
+                        </p>
+                        <img src="img/page/p5_icon01.svg" />
+                      </div>
+                      <div class="p5_btn">
+                        <a href="/"> <img src="img/page/p5_icon02.svg" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page6  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p6">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">06</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="p6_inner move"
+                    data-aos="fade-down"
+                    data-aos-delay="400"
+                  >
+                    <div class="p6_top">
+                      <img src="img/page/p6_img01.png" />
+                      <p class="p6_tit cha">OEM · ODM</p>
+                    </div>
+
+                    <div class="p6_bot">
+                      <div class="p6_bot_top">
+                        <img src="img/page/p6_icon01.svg" />
+                      </div>
+                      <div class="p6_bot_bot">
+                        <img src="img/page/p6_icon05.svg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page7  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p7">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">07</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont">
+                    <div
+                      class="p7_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <img src="img/page/p7_img01.png" alt="" />
+                    </div>
+
+                    <div
+                      class="p7_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <ul class="p7_product product">
+                        <li class="page-8">
+                          <a href="" class="num"
+                            ><img src="img/page/p7_img02.svg"
+                          /></a>
+                        </li>
+                        <li class="page-9">
+                          <a href="" class="num"
+                            ><img src="img/page/p7_img03.svg"
+                          /></a>
+                        </li>
+                        <li class="page-10">
+                          <a href="" class="num"
+                            ><img src="img/page/p7_img04.svg"
+                          /></a>
+                        </li>
+                        <li class="page-11">
+                          <a href="" class="num"
+                            ><img src="img/page/p7_img05.svg"
+                          /></a>
+                        </li>
+                        <li class="page-12">
+                          <a href="" class="num"
+                            ><img src="img/page/p7_img06.svg"
+                          /></a>
+                        </li>
+                        <li class="page-13">
+                          <a href="" class="num"
+                            ><img src="img/page/p7_img07.svg"
+                          /></a>
+                        </li>
+                      </ul>
+
+                      <a class="p7_btn" href="/"
+                        ><img src="img/page/p7_icon01.svg" alt=""
+                      /></a>
+                    </div>
+
+                    <ul
+                      class="p7_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_on page-7">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-14">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-17">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-21">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-24">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-26">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page8 / 30 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">08</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p8_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot">
+                        <div class="p8_txt">
+                          <img src="img/page/p8_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p8_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top">
+                        <div><img src="img/page/p8_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p8.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li
+                            class="p8_eng"
+                            data-src="img/page/modal_p8_en.jpg"
+                          >
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p8_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_on page-30">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-31">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-32">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-33">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-34">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-35">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page9 / 36 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p9">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">09</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p9_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot">
+                        <div class="p8_txt">
+                          <img src="img/page/p9_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p9_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p9_right_top">
+                        <div><img src="img/page/p9_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p9.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng"" data-src="img/page/modal_p9_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p9_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_on page-36">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-37">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-38">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-39">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-40">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-41">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page10 / 42 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p10">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">10</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p10_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p10_left_bot">
+                        <div class="p8_txt p10_txt">
+                          <img src="img/page/p10_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p10_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p10_right_top">
+                        <div><img src="img/page/p10_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p10.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p10_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p10_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_on page-42">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-43">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-44">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-45">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-46">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-47">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page11 / 48 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p11">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">11</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p11_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p11_left_bot">
+                        <div class="p8_txt p11_txt">
+                          <img src="img/page/p11_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p11_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p11_right_top">
+                        <div><img src="img/page/p11_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p11.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p11_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p11_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_on page-48">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-49">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-50">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-51">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-52">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-53">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page12 / 54 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p12">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">12</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p12_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p12_left_bot">
+                        <div class="p8_txt p12_txt">
+                          <img src="img/page/p12_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p12_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p12_right_top">
+                        <div><img src="img/page/p12_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p12.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p12_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p12_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_on page-54">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-55">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-56">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-57">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-58">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-59">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page13 / 60 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p13">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">13</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p13_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p13_left_bot">
+                        <div class="p8_txt">
+                          <img src="img/page/p13_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p13_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p13_right_top">
+                        <div><img src="img/page/p13_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p13.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p13_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p13_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_on page-60">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-61">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-62">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-63">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-64">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-65">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page14 /66 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p7 p14">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">14</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont">
+                    <div
+                      class="p7_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <img src="img/page/p14_img01.png" alt="" />
+                    </div>
+
+                    <div
+                      class="p7_right p14_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <ul class="p7_product product p14_product product">
+                        <li class="page-15">
+                          <a href="" class="num"
+                            ><img src="img/page/p14_img02.svg"
+                          /></a>
+                        </li>
+                        <li class="page-16">
+                          <a href="" class="num"
+                            ><img src="img/page/p14_img03.svg"
+                          /></a>
+                        </li>
+                      </ul>
+
+                      <a class="p7_btn" href="/"
+                        ><img src="img/page/p7_icon01.svg" alt=""
+                      /></a>
+                    </div>
+
+                    <ul
+                      class="p7_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-66">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-67">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-68">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-69">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-70">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-71">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page15 /72 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p15">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">15</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p15_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p15_left_bot">
+                        <div class="p8_txt">
+                          <img src="img/page/p15_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p15_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p15_right_top">
+                        <div><img src="img/page/p15_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p15.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p15_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p15_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-72">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-73">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-74">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-75">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-76">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-77">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page16 / 78 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p16">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">16</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p16_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p16_left_bot">
+                        <div class="p8_txt p16_txt">
+                          <img src="img/page/p16_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p16_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p16_right_top">
+                        <div><img src="img/page/p16_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p16.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p16_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p16_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-78">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-79">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-80">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-81">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-82">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-83">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page17 / 84 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p7 p14">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">17</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont">
+                    <div
+                      class="p7_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <img src="img/page/p17_img01.png" alt="" />
+                    </div>
+
+                    <div
+                      class="p7_right p14_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <ul class="p7_product product p14_product product">
+                        <li class="page-18">
+                          <a href="" class="num"
+                            ><img src="img/page/p17_img02.svg"
+                          /></a>
+                        </li>
+                        <li class="page-19">
+                          <a href="" class="num"
+                            ><img src="img/page/p17_img03.svg"
+                          /></a>
+                        </li>
+                        <li class="page-20">
+                          <a href="" class="num"
+                            ><img src="img/page/p17_img04.svg"
+                          /></a>
+                        </li>
+                      </ul>
+
+                      <a class="p7_btn" href="/"
+                        ><img src="img/page/p7_icon01.svg" alt=""
+                      /></a>
+                    </div>
+
+                    <ul
+                      class="p7_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-84">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-85">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-86">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-87">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-88">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-89">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page18 / 90  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p18">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">18</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p18_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p18_left_bot">
+                        <div class="p8_txt p18_txt">
+                          <img src="img/page/p18_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p18_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p18_right_top">
+                        <div><img src="img/page/p18_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p18_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-90">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-91">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-92">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-93">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-94">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-95">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" />
+                        </a>
+                      </il>
+                    </ul>
+                  </div>
+                  <!-- 곱창돌김은 상세페이지없음 -->
+                 <!--  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- page19 / 96  -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p19">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">19</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p19_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p19_left_bot">
+                        <div class="p8_txt p19_txt">
+                          <img src="img/page/p19_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p19_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p19_right_top">
+                        <div><img src="img/page/p19_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p19.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p19_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p19_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-96">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-97">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-98">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-99">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-100">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-101">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page20 / 102-->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p20">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">20</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p20_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p20_left_bot">
+                        <div class="p8_txt p20_txt">
+                          <img src="img/page/p20_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p20_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p20_right_top">
+                        <div><img src="img/page/p20_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p20.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p20_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p20_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-102">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-103">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-104">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-105">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-106">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-107">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page21 / 108 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p7 p21">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">21</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont">
+                    <div
+                      class="p7_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <img src="img/page/p21_img01.png" alt="" />
+                    </div>
+
+                    <div
+                      class="p7_right p14_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <ul class="p7_product product p14_product product">
+                        <li class="page-22">
+                          <a href="" class="num"
+                            ><img src="img/page/p21_img02.svg"
+                          /></a>
+                        </li>
+                        <li class="page-23">
+                          <a href="" class="num"
+                            ><img src="img/page/p21_img03.svg"
+                          /></a>
+                        </li>
+                        <li class="page-24-1">
+                          <a href="" class="num"
+                            ><img src="img/page/p21_img04.svg"
+                          /></a>
+                        </li>
+                      </ul>
+
+                      <a class="p7_btn" href="/"
+                        ><img src="img/page/p7_icon01.svg" alt=""
+                      /></a>
+                    </div>
+
+                    <ul
+                      class="p7_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-108">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-109">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-110">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-111">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-112">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-113">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page22 / 114 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p22">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">22</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p22_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p22_left_bot">
+                        <div class="p8_txt p22_txt">
+                          <img src="img/page/p22_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p22_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p22_right_top">
+                        <div><img src="img/page/p22_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p22.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p22_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p22_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-114">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-115">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-116">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-117">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-118">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-119">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page23 / 120 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p23">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">23</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p23_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p23_left_bot">
+                        <div class="p8_txt p23_txt">
+                          <img src="img/page/p23_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p23_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p23_right_top">
+                        <div><img src="img/page/p23_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p22.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p22_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p23_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-120">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-121">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-122">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-123">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-124">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-125">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page24 / 126 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p7 p24">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">24</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont">
+                    <div
+                      class="p7_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <img src="img/page/p24_img01.png" alt="" />
+                    </div>
+
+                    <div
+                      class="p7_right p24_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <ul class="p7_product product p24_product product">
+                        <li class="page-25">
+                          <a href="" class="num"
+                            ><img src="img/page/p24_img02.svg"
+                          /></a>
+                        </li>
+                        <li class="page-27">
+                          <a href="" class="num"
+                            ><img src="img/page/p24_img03.svg"
+                          /></a>
+                        </li>
+                      </ul>
+
+                      <a class="p7_btn" href="/"
+                        ><img src="img/page/p7_icon01.svg" alt=""
+                      /></a>
+                    </div>
+
+                    <ul
+                      class="p7_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-126">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-127">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-128">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-129">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-130">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-131">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page25 /132 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p25">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">25</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p25_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p25_left_bot">
+                        <div class="p8_txt p25_txt">
+                          <img src="img/page/p25_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p25_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p25_right_top">
+                        <div><img src="img/page/p25_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p25.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p25_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p25_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-132">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-133">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-134">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-135">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-136">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-2.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-137">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-1.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page26 / 138 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p7 p26">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">26</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont">
+                    <div
+                      class="p7_left left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <img src="img/page/p26_img01.png" alt="" />
+                    </div>
+
+                    <div
+                      class="p7_right p14_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <ul class="p7_product product p14_product product">
+                        <li class="page-28">
+                          <a href="" class="num"
+                            ><img src="img/page/p26_img02.svg"
+                          /></a>
+                        </li>
+                        <li class="page-29">
+                          <a href="" class="num"
+                            ><img src="img/page/p26_img03.svg"
+                          /></a>
+                        </li>
+                        <li class="page-30-1">
+                          <a href="" class="num"
+                            ><img src="img/page/p26_img04.svg"
+                          /></a>
+                        </li>
+                      </ul>
+
+                      <a class="p7_btn" href="/"
+                        ><img src="img/page/p7_icon01.svg" alt=""
+                      /></a>
+                    </div>
+
+                    <ul
+                      class="p7_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-138">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-139">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-140">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-141">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-142">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-143">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-2.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page27 / 144 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p27">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">27</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p27_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p27_left_bot">
+                        <div class="p8_txt p27_txt">
+                          <img src="img/page/p27_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p27_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p27_right_top">
+                        <div><img src="img/page/p27_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p27.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p27_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p27_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-144">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-145">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-146">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-147">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-148">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-149">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-2.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page28 / 150 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p28">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">28</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p28_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p28_left_bot">
+                        <div class="p8_txt p28_txt">
+                          <img src="img/page/p28_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p28_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p28_right_top">
+                        <div><img src="img/page/p28_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p28.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p28_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p28_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-150">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-151">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-152">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-153">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-154">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-155">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-2.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div id="myModal28" class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close" id="closeModal28">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page29 / 156 -->
+
+              <div class="swiper-slide catal_page">
+                <div class="swiper-zoom-container page_box p8 p29">
+                  <div class="frame_left">
+                    <div
+                      class="move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <p class="contents cha">29</p>
+                      <p class="kb">
+                        건강과 자연을 먼저 생각하는
+                        <span class="bold">해조명가 김</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="page_cont move" data-aos="fade-up">
+                    <div
+                      class="p8_left move"
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_left_top">
+                        <img src="img/page/p29_img01.png" />
+                      </div>
+
+                      <div class="p8_left_bot p29_left_bot">
+                        <div class="p8_txt p29_txt">
+                          <img src="img/page/p29_icon01.svg" />
+                        </div>
+                        <div><img src="img/page/p29_icon02.svg" /></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="p8_right move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <div class="p8_right_top p29_right_top">
+                        <div><img src="img/page/p29_icon03.svg" /></div>
+
+                        <ul class="p8_btn">
+                          <li class="p8_kor" data-src="img/page/modal_p29.jpg">
+                            <img src="img/page/p8_icon04.svg" />
+                          </li>
+                          <li class="p8_eng" data-src="img/page/modal_p29_en.jpg">
+                            <img src="img/page/p8_icon05.svg" />
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="p8_right-bot">
+                        <img src="img/page/p29_img02.png" />
+                      </div>
+                    </div>
+
+                    <ul
+                      class="p8_nav menu_nav move"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                    >
+                      <il class="nav_off page-156">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon02-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-157">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon03-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-158">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon04-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-159">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon05-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_off page-160">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon06-1.svg" alt="" /></a
+                      ></il>
+                      <il class="nav_on page-161">
+                        <a class="num" href="/"
+                          ><img src="img/page/nav_icon07-2.svg" alt="" /></a
+                      ></il>
+                    </ul>
+                  </div>
+                  <div class="modal_wrap">
+                    <div id="myModal29" class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close" id="closeModal29">&times;</span>
+                  </div>
+                  <div class="modal_wrap_en">
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-scrollable-content">
+                          <img class="modalImage" src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <link
+              rel="stylesheet"
+              href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+            />
+          </div>
+
+          <div class="list_wrap">
+            <div class="list_close" onclick="list_close();">
+              <img src="img/close.png" alt="" />
+              <img src="img/close2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/page.js"></script>
+  <script src="js/modal.js"></script>
+
+
+
+  <!-- 슬라이드 스크립트 -->
+  <script>
+    $(window).on("load", function () {
+      AOS.refresh();
+    });
+    $(document).ready(function () {
+      AOS.init();
+    });
+    var CatalSwiper = new Swiper(".swiper-container", {
+      //        zoom: true,
+      allowTouchMove: false,
+      speed: 600,
+      parallax: true,
+
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+
+      //autoplay: false,
+
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<span class="' +
+            className +
+            '">' +
+            ("0" + (index + 0)).slice(-2) +
+            "</span>"
+          );
+        },
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // animation
+
+      on: {
+        slideChangeTransitionStart: function () {
+          $(".move").hide(0);
+          $(".move").removeClass("aos-init").removeClass("aos-animate");
+        },
+        slideChangeTransitionEnd: function () {
+          $(".move").show(0);
+          AOS.init();
+        },
+      },
+    });
+
+    AOS.init();
+
+    $(".swiper-button-play").click(function () {
+      CatalSwiper.autoplay.start();
+
+      $(".play").addClass("on");
+      $(".pause").removeClass("on");
+
+      $(".swiper-button-play").addClass("on");
+      $(".swiper-button-pause").removeClass("on");
+    });
+
+    $(".swiper-button-pause").click(function () {
+      CatalSwiper.autoplay.stop();
+
+      $(".play").removeClass("on");
+      $(".pause").addClass("on");
+
+      $(".swiper-button-play").removeClass("on");
+      $(".swiper-button-pause").addClass("on");
+    });
+  
+
+  // 전체화면 스크립트 
+  
+    /* 
+    Get the documentElement (<html>) to display the page in fullscreen */
+    var elem = document.documentElement;
+
+    /* View in fullscreen */
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        /* IE11 */
+        elem.msRequestFullscreen();
+      }
+
+      $(".full1").hide();
+      $(".full2").show();
+    }
+
+    /* Close fullscreen */
+    function closeFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        /* Safari */
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        /* IE11 */
+        document.msExitFullscreen();
+      }
+
+      $(".full2").hide();
+      $(".full1").show();
+    }
+  
+
+
+  // 리스트 화면 스크립트 
+  
+    function list() {
+      $(".list_wrap").addClass("on");
+    }
+
+    function list_close() {
+      $(".list_wrap").removeClass("on");
+    }
+  
+
+  // page3 slide
+  $(document).ready(function() {
+    var PageSwiper;
+
+    // Swiper 초기화 함수
+    function initializeSwiper() {
+      PageSwiper = new Swiper(".page-slider-p3", {
+        direction: "horizontal",
+        loop: true,
+      });
+    }
+
+    // 슬라이더 초기화
+    initializeSwiper();
+
+    // 각 li 요소에 클릭 이벤트 리스너 추가
+    $(".p3_nav li a").on("click", function(e) {
+      e.preventDefault(); // 기본 링크 동작 막기
+
+      // 클릭된 li 요소의 data-target 속성 값 가져오기
+      var targetSlideId = $(this).data("target");
+
+      // Swiper 초기화 후에 슬라이드로 이동
+      if (PageSwiper) {
+        PageSwiper.slideTo($("#" + targetSlideId).index());
+      }
+    });
+  });
+  
+
+  //page4 slide 
+
+
+  $(document).ready(function() {
+    var PageSwiperP4;
+  
+    // Swiper 초기화 함수
+    function initializeSwiperP4() {
+      PageSwiperP4 = new Swiper(".page-slider-p4", {
+        direction: "horizontal",
+        loop: true,
+      });
+    }
+  
+    // 슬라이더 초기화
+    initializeSwiperP4();
+  
+     // 각 li 요소에 클릭 이벤트 리스너 추가
+     $(".p4_nav li").on("click", function(e) {
+      e.preventDefault(); // 기본 링크 동작 막기
+
+      // 클릭된 li 요소의 data-target 속성 값 가져오기
+      var targetSlideIdP4 = $(this).data("target");
+
+      // Swiper 초기화 후에 슬라이드로 이동
+      if (PageSwiperP4) {
+        PageSwiperP4.slideTo($("#" + targetSlideIdP4).index());
+      }
+    });
+  });
+  </script>
+  
+
+
+</html>
